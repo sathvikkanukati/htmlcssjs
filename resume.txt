@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <title>Sathvik kanukati Resume</title>
+  <style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ededf4;
+    color: #333;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fffcfc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 20px;
+  }
+
+  .header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    margin: 10px 0 5px;
+    font-size: 26px;
+    color: #0077b6;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: #555;
+    font-weight: normal;
+  }
+
+  .section {
+    margin: 25px 0;
+  }
+
+  .section h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+    border-left: 5px solid #0077b6;
+    padding-left: 10px;
+  }
+
+  .contact p, .languages ul, .expertise ul, .hobbies ul {
+    margin: 5px 0;
+  }
+
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  .two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  table, th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+  }
+
+  a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .foot {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+  }
+  .social-media i {
+  margin-right: 8px;
+  color:#E1306C;
+  font-size: 18px;
+}
+
+ </style> 
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/036/324/708/small/ai-generated-picture-of-a-tiger-walking-in-the-forest-photo.jpg" alt="Profile Picture" />
+            <h1>SATHVIK KANUKATI</h1>
+            <h2>Student</h2>
+        </div>
+        <div class="section profile">
+      <h3>Profile</h3>
+      <p>
+        I am a motivated and detail-oriented undergraduate engineering student with a strong foundation in programming and problem-solving. Passionate about learning emerging technologies and applying them to real-world challenges. Known for being hardworking, adaptable, and eager to contribute to team success. Seeking opportunities to develop my skills further and gain hands-on experience in the tech industry.
+      </p>
+    </div>
+    <div class="two-columns">
+      <div class="column">
+        <div class="section contact">
+          <h3>Contact</h3>
+          <p>Phone: +919949614427</p>
+          <p>Email: 245124751026@mvsrec.edu.in</p>
+          <p>Address:Hyderabad, Telangana</p>
+        </div>
+
+        <div class="section expertise">
+          <h3>SKILLS</h3>
+          <ol>
+            <li>C Language</li>
+            <li>Python Language</li>
+            <li>JAVA</li>
+            <li>html</li>
+          </ol>
+        </div>
+
+        <div class="section languages">
+          <h3>Languages</h3>
+          <ol>
+            <li>English</li>
+            
+            <li>Telugu</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="education">
+          <h3>Education</h3>
+          <table>
+            <tr>
+              <th>Board</th>
+              <th>Institution</th>
+              <th>Percentage</th>
+            </tr>
+            <tr>
+              <td>ICSE</td>
+              <td>St.Josephs</td>
+              <td>89%</td>
+            </tr>
+            <tr>
+              <td>TSBIE</td>
+              <td>Sri chaitanya Junior College</td>
+              <td>90%</td>
+            </tr>
+            <tr>
+              <td>BE</td>
+              <td>MVSR</td>
+              <td>9.11GPA</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section hobbies">
+      <h3>Hobbies</h3>
+      <ol>
+        <li>Playing basketball</li>
+        <li>wasting parents money</li>
+        <li>hanging out with friends</li>
+      </ol>
+    </div>
+
+    <div class="section interests">
+      <h3>Interests</h3>
+      <p>Ethical hacking</p>
+    </div>
+
+    <div class="section social-media">
+        <h3>Social Media</h3>
+        <p>
+            <a href="https://www.instagram.com/sathvik_kanukati?igsh=bXlpbG5yN2ozMjhy" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </p>
+        <p>
+            <a href="https://www.snapchat.com/add/k.sathvik7?share_id=UB1dpAzZ5dE&locale=en-IN" target="_blank">
+            <i class="fab fa-snapchat-ghost"></i> Snapchat
+            </a>
+        </p>
+    </div>
+    <div class="foot">
+      <p>© 2025 sk community</p>
+    </div>
+  </div>
+</body>
+</html>
