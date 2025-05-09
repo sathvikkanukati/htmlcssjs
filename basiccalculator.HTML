@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+ <body>
+    <div class="calculator">
+  <h2>Basic Calculator</h2>
+    <input type="number" id="a" placeholder="Enter first number">
+    <input type="number" id="b" placeholder="Enter second number"><br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <p id="c">RESULT:</p>
+    </div>
+ </body>
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(164, 204, 240);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+    }
+    .calculator{
+        background-color: aliceblue;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align:center;
+    }
+    input[type="number"] {
+      width: 100px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button{
+        color: rgb(255, 255, 255);
+        background-color: rgb(39, 70, 192);
+        font-size: large;
+        padding: 10px;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 80vh;
+        transition: background-color 1.3s;
+l   }
+    button:hover {
+    background-color:lightblue;
+    }
+    #c{
+        font-size: 3vh;
+        margin-top: 20px;
+        border: 2px solid rgb(31, 47, 168);
+    }
+
+</style>
+
+<script>
+    function getValues(){
+        var x = Number(document.getElementById("a").value);
+        var y = Number(document.getElementById("b").value);
+        return[x,y];
+    }
+    function add() {
+        var[x,y] = getValues();
+        document.getElementById("c").innerHTML = "RESULT: " + (x + y);
+        document.getElementById("c").style.color = "blue";
+    }
+    function sub(){
+        var[x,y] = getValues();
+        document.getElementById("c").innerHTML = "RESULT: " + (x - y);
+        document.getElementById("c").style.color = "blue";
+    }
+    function mul(){
+       var[x,y] = getValues();
+        document.getElementById("c").innerHTML = "RESULT: " + (x * y);
+        document.getElementById("c").style.color = "blue";
+    }
+    function div(){
+        var[x,y] = getValues();
+        if(y === 0){ 
+        document.getElementById("c").innerHTML = "Cannot divide by zero!";
+        document.getElementById("c").style.color = "red";
+        } else {
+        document.getElementById("c").innerHTML = "RESULT: " + (x / y);
+        document.getElementById("c").style.color = "blue";
+        }
+    }
+</script>
